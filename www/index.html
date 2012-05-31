@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script type="text/javascript" src="jquery-1.7.2.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#fetch").click(function() {
+		
+		var options = {};
+		var url = "/fetch?remote=" + $("#remote").val();
+		var success = function(res) {
+			alert("Response");
+			$("#data").html($(res));
+		};
+		
+		alert("Fetch " + url);
+		
+		jqRequest = jQuery.get(url, success);
+		
+	});
+	
+});
+
+</script>
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+	<div>Remote URL</div>
+	<div>
+		<input type="text" id="remote">
+		<button id="fetch">Fetch</button>
+	</div>
+	
+	<div id="data"></div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+	"name" : "argo",
+	"version" : "0.0.1",
+	"author" : "John Manero <john.manero@gmail.com>",
+	"homepage" : "https://github.com/jmanero/argo",
+	"description" : "Render long JSON strings in readable formats",
+	"keywords" : [ "JSON" ],
+	"bugs" : {
+		"url" : "https://github.com/jmanero/argo/issues"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/jmanero/argo.git"
+	},
+	"dependencies" : {
+		"colors" : "*",
+		"express" : "*",
+		"jade" : "*"
+	},
+	"licenses": [
+	     {
+	       "type": "MIT",
+	       "url": "http://github.com/jmanero/argo/blob/master/LICENSE"
+	     }
+     ],
+	"engine" : {
+		"node" : ">=0.6.17"
+	}
+}
